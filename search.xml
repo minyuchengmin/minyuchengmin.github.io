@@ -8,7 +8,7 @@
 <p>不得不说，人这一辈子，谁都会真香几次。</p>
 <p>七月份，我正好买到了新的笔记本。在玩绝地求生的同时，我偶然间了解了APEX英雄，然后便一发不可收拾，往这个坑越跳越深。</p>
 <a id="more"></a>
-<h3 id="APEX简介"><a href="#APEX简介" class="headerlink" title="APEX简介"></a>APEX简介</h3><p><img src="minyuchengmin.github.io/therspist/APEX.png" alt="APEX游戏界面"></p>
+<h3 id="APEX简介"><a href="#APEX简介" class="headerlink" title="APEX简介"></a>APEX简介</h3><p><img src="https://minyuchengmin.github.io/therspist/APEX.png" alt="APEX游戏界面"></p>
 <p>APEX英雄是一个免费大逃杀游戏，拥有一个大逃杀打游戏的基本元素————开局跳伞，落地捡装备，缩小的毒圈等。</p>
 <p>而作为一个大火的游戏，APEX也是独具一格。</p>
 <p>其最大的特色就是游戏中的人物拥有独特的技能，就像守望先锋一样。每个人物有三个技能一个被动，一个主技能和一个大招。</p>
@@ -21,7 +21,7 @@
 <p>origin平台距离大陆最近的两台服务器实在香港和台湾，所以除非所在的地方离这两个地方很近，我还是强烈建议在下载和游玩游戏之前买一个加速器。</p>
 <p>现在公认的最稳定的加速器是网易的uu加速器，不过uu加速器的价格偏高，我用的加速器是迅龙加速器，虽然稳定方面没有uu加速器那么出色，但是性价比比较高，而且还提供暂停加速功能，当然，稳定性还是比较可以的。</p>
 <p>APEX的画质很高，但是对电脑配置的要求却并没有绝地求生那么严格。</p>
-<p><img src="minyuchengmin.github.io/therspist/hardware.png" alt="最低配置需求"></p>
+<p><img src="https://minyuchengmin.github.io/therspist/hardware.png" alt="最低配置需求"></p>
 <p>上图是玩APEX的最低配置需求，不过要是想在最低画质设置下流畅地玩耍地话肯定要是在上图配置之上了。</p>
 <p>本博主的电脑配置：</p>
 <p>处理器：Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz 2.59 GHz</p>
@@ -36,7 +36,7 @@
 <p>我们就开始进行对APEX英雄的基础设置吧。</p>
 <h3 id="APEX设置"><a href="#APEX设置" class="headerlink" title="APEX设置"></a>APEX设置</h3><p>APEX肯定需要独显的支持，对于英伟达显卡，我们要在桌面上右键，选择NVIDIA控制面板，在左侧菜单栏选择管理3D设置，选择程序设置，点击添加，在浏览中，进入APEX的下载目录中找到r5apex.exe，进行添加。</p>
 <p>然后在首选处理器中选择高性能NVIDIA处理器。这样，我们就把APEX设置成独显中运行了（如下图）。</p>
-<p><img src="minyuchengmin.github.io/therspist/NVIDIA.png" alt=""></p>
+<p><img src="https://minyuchengmin.github.io/therspist/NVIDIA.png" alt=""></p>
 <p>我们现在进入游戏即可，注意游戏的反外挂程序可能和杀毒软件冲突，所以在进入游戏之前建议关掉腾讯管家、360等软件。</p>
 <p>一进游戏会播放很帅气的宣传片，自从第二赛季开始每一季都会有很帅气的宣传片，有兴趣的可以去看看。</p>
 <p>进入游戏后先不要着急进入新手教程。我们首先打开设置，在视频设置中，我们可以根据自己的电脑配置二进行调整。</p>
