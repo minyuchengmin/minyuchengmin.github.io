@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo博客新版next主题搭建</title>
+    <url>/2020/02/26/hexo-bo-ke-xin-ban-next-zhu-ti-da-jian/</url>
+    <content><![CDATA[<p>说实话，我其实本来不想写这篇文章的。</p>
+<p>网上hexo博客的搭建教程很多，而且大多数方法其实都差不多。</p>
+<p>然后在某一天，我的next主题突然炸了（font-awesome死了），我去github一看，发现原理是next主题出新的版本了（v7.7.1），并放弃了对旧版（v6.7.0）的维护。</p>
+<p>如果只是这样问题不大，只要重新配置一下主题就行。</p>
+<p>关键是我搞着搞着发现新版的主题并没有我想象的那么好配置。</p>
+<p>原来的配置方法基本上都失效了，而且各种文件的配置方法都出现了多多少少的改动。</p>
+<p>最难受的是，网上的一些配置next主题的文章都停留于旧版主题，一切只能靠自己的经验和代码直觉。</p>
+<p>经历千辛万苦后终于配置完博客的我，有了写一篇文章的想法。</p>
+<p>我会在这篇文章来详细地介绍如何配置新版next主题，并会将其与老版主题做比较。</p>
+<h3 id="搭建博客（基础内容）"><a href="#搭建博客（基础内容）" class="headerlink" title="搭建博客（基础内容）"></a>搭建博客（基础内容）</h3><p>这个地方我是不会讲的，因为网上的文章太多，总感觉自己在抄袭。</p>
+<p>我这里推荐<a href="https://venusnero.github.io/2019/01/23/build_hexo_github_blog/" target="_blank" rel="noopener">Venus大佬的博客</a></p>
+<p>他的文章介绍得比较详细，而且里面基本上没有什么坑。</p>
+<p>到时候先跳过主题那一部分即可。</p>
+<h3 id="新版next主题配置"><a href="#新版next主题配置" class="headerlink" title="新版next主题配置"></a>新版next主题配置</h3><p>萌新和偶遇经验的人都可以无门槛地进行配置。</p>
+<p>对于最终效果有疑问的人可以参考着本博客来搭建。</p>
+<p>首先，我们要导入主题。</p>
+<p>我们在cmd中cd到博客目录之后输入<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure><br>等加载条加载完之后我们就可以使用主题了。</p>
+<p>然后我们打开博客的_config.yml，在theme那里把landscape改成next</p>
+<p>现在，如果你在cmd输入hexo s，在浏览器输入localhost:4000的话，你会发现你的博客变成next了（虽然现在有点丑了就是）。</p>
+<p>我们在博客配置里找到subtitle、description和author的栏目，这分别对应着博客的副标题、作者的说明（相当于个性签名了吧）和作者名字。这些可以凭个人喜好修改。</p>
+<p>我们在language把en修改成zh-CN。</p>
+]]></content>
+      <tags>
+        <tag>教程</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>APEX入坑指导</title>
     <url>/2020/02/25/APEX-ru-keng-zhi-dao/</url>
     <content><![CDATA[<p>“我已经花98块钱买了绝地求生，我不会再玩一个新的大逃杀游戏“</p>
