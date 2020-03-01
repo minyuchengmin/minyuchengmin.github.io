@@ -1223,7 +1223,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffff32;
+  background: #597cff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1978,6 +1978,16 @@ pre .javascript .function {
 .followme .social-list .social-link .label {
   display: block;
   font-size: 14px;
+}
+.post-body p a {
+  color: #8deeee;
+  border-bottom: none;
+  border-bottom: 1px solid #8deeee;
+}
+.post-body p a:hover {
+  color: #ffaeb9;
+  border-bottom: none;
+  border-bottom: 1px solid #ffaeb9;
 }
 .category-all-page .category-all-title {
   text-align: center;
