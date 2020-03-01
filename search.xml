@@ -57,20 +57,20 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">math:</span><br><span class="line">  mathjax:</span><br><span class="line">    enable: true</span><br><span class="line">    mhchem: false</span><br><span class="line">   katex:</span><br><span class="line">    enable: false</span><br><span class="line">    copy_tex: false</span><br></pre></td></tr></table></figure>
 <p>在Venus大佬的博客里已经提过修改数学语言规则的方法了，这里我就不再多说了</p>
 <h4 id="阅读人数"><a href="#阅读人数" class="headerlink" title="阅读人数"></a>阅读人数</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">busuanzi_count:</span><br><span class="line">  enable: true</span><br><span class="line">  total_visitors: true</span><br><span class="line">  total_visitors_icon: user</span><br><span class="line">  total_views: true</span><br><span class="line">  total_views_icon: eye</span><br><span class="line">  post_views: true</span><br><span class="line">  post_views_icon: eye</span><br></pre></td></tr></table></figure>
-<h4 id="文章搜索"><a href="#文章搜索" class="headerlink" title="文章搜索"></a>文章搜索</h4><p>我们打开cmd，cd到博客目录中，输入&gt;npm install hexo-generator-searchdb —save&gt;</p>
+<h4 id="文章搜索"><a href="#文章搜索" class="headerlink" title="文章搜索"></a>文章搜索</h4><p>我们打开cmd，cd到博客目录中，输入npm install hexo-generator-searchdb —save</p>
 <p>我们在博客主目录（不是主题目录）的_config.yml输入以下内容</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
 <p>然后再主题的_config.yml下添加以下内容</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  unescape: false</span><br></pre></td></tr></table></figure>
 <h4 id="书签"><a href="#书签" class="headerlink" title="书签"></a>书签</h4><p>书签会记住你上次阅读文章停留的位置</p>
-<p>我们在cmd中输入&gt;git clone <a href="https://github.com/theme-next/theme-next-bookmark.git" target="_blank" rel="noopener">https://github.com/theme-next/theme-next-bookmark.git</a> source/lib/bookmark&gt;</p>
+<p>我们在cmd中输入git clone <a href="https://github.com/theme-next/theme-next-bookmark.git" target="_blank" rel="noopener">https://github.com/theme-next/theme-next-bookmark.git</a> source/lib/bookmark</p>
 <p>然后再主题目录下修改以下配置<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bookmark:</span><br><span class="line">  enable: true</span><br><span class="line">  save: auto</span><br></pre></td></tr></table></figure><br>经过主题更新之后，书签的位置胸左上角移到了右上角，如果觉得和后面添加的进度条冲突的话可以在css中删除bookmark图标（具体位置我也不记得了，反正是偶然找到的）</p>
 <h4 id="标签等栏目"><a href="#标签等栏目" class="headerlink" title="标签等栏目"></a>标签等栏目</h4><p>如果有些人在到这之前在博客的目录栏中打开了标签等栏目的话会发现这种情况：</p>
 <p><img src="https://minyuchengmin.github.io/therspist/404.jpg" alt=""></p>
 <p>原因是因为我们并没有添加相对应的地址。</p>
-<p>我们在cmd中输入&gt;hexo new page “tags”&gt;新建tag栏目</p>
+<p>我们在cmd中输入hexo new page “tags”新建tag栏目</p>
 <p>然后如法炮制建立其他的栏目</p>
-<p>然后我们在source\tags\index.md的标题位置输入<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">type: &quot;tags&quot;</span><br></pre></td></tr></table></figure></p>
+<p>然后我们在source\tags\index.md的标题位置输入<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">type: &quot;tags&quot;</span><br></pre></td></tr></table></figure></p>
 <p>about等其他栏目我们可以正常地编写文章进去。</p>
 <h4 id="背景图片"><a href="#背景图片" class="headerlink" title="背景图片"></a>背景图片</h4><p>背景图片可是博客的灵魂之一，也是新主题最令人抓狂的地方之一。</p>
 <p>用过老版主题的人都知道，想要添加背景图片就去_custom文件中进行修改就行了。</p>
@@ -91,14 +91,14 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">plugins: hexo-generate-feed</span><br></pre></td></tr></table></figure>
 <p>然后打开主题的_config.yml</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">follow_me:</span><br><span class="line">  #Twitter: https:&#x2F;&#x2F;twitter.com&#x2F;username || twitter</span><br><span class="line">  #Telegram: https:&#x2F;&#x2F;t.me&#x2F;channel_name || telegram</span><br><span class="line">  #WeChat: &#x2F;images&#x2F;wechat_channel.jpg || wechat</span><br><span class="line">  RSS: &#x2F;atom.xml || rss</span><br></pre></td></tr></table></figure>
-<p>然后再cmd中输入&gt;npm install —save hexo-generator-feed&gt;</p>
+<p>然后再cmd中输入npm install —save hexo-generator-feed</p>
 <h4 id="文章链接文本颜色"><a href="#文章链接文本颜色" class="headerlink" title="文章链接文本颜色"></a>文章链接文本颜色</h4><p>示例：</p>
 <p><img src="https://minyuchengmin.github.io/therspist/color.jpg" alt=""></p>
 <p>themes\next\source\css_common\components\post\post.styl,在最底部添加以下代码</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.post-body p a&#123;</span><br><span class="line">  color: #0593d3;</span><br><span class="line">  border-bottom: none;</span><br><span class="line">  border-bottom: 1px solid #0593d3;</span><br><span class="line">  &amp;:hover &#123;</span><br><span class="line">    color: #fc6423;</span><br><span class="line">    border-bottom: none;</span><br><span class="line">    border-bottom: 1px solid #fc6423;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>可以通过修改color的rgb编码来改变颜色，具体颜色编码自行百度</p>
 <h4 id="修改文章底部标签"><a href="#修改文章底部标签" class="headerlink" title="修改文章底部标签"></a>修改文章底部标签</h4><p><img src="https://minyuchengmin.github.io/therspist/tags.jpg" alt=""></p>
-<p>打开&gt;\themes\next\layout_macro\post.swig，<br>搜索 rel=”tag”&gt;#，将 # 换成<i class="fa fa-tag"></i></p>
+<p>打开\themes\next\layout_macro\post.swig，搜索 rel=”tag”#，将 # 换成<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;i class&#x3D;&quot;fa fa-tag&quot;&gt;&lt;&#x2F;i&gt;</span><br></pre></td></tr></table></figure></p>
 <h4 id="加载条"><a href="#加载条" class="headerlink" title="加载条"></a>加载条</h4><p>虽然next主题自带加载条（主题_config的pace），但是只有少量的颜色，所以要自己添加</p>
 <p>打开\themes\next\layout_partials\head.swig，在这里添加红框上的代码</p>
 <p><img src="https://upload-images.jianshu.io/upload_images/5308475-72a578a8e3eee672.png" alt=""></p>
@@ -112,7 +112,8 @@
 <p>解压缩之后把文件夹里面的dist文件夹复制粘贴到\themes\next\source中</p>
 <p>添加歌曲有两种方法，一种是导入外部歌单，比如说qq音乐的歌单，另一种方法是手动从外链网站导入歌曲，因为第二种方法过于麻烦，这里只推荐第一种</p>
 <p>打开\themes\next\layout_layout.swig，在倒数第三行（也就是在body上方）添加以下代码</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- 音乐播放器 --&gt;</span><br><span class="line"> &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;aplayer@1.10.0&#x2F;dist&#x2F;APlayer.min.css&quot;&gt;</span><br><span class="line"> &lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;aplayer@1.10.0&#x2F;dist&#x2F;APlayer.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line"> &lt;div id&#x3D;&quot;aplayer&quot; class&#x3D;&quot;aplayer&quot; data-id&#x3D;&quot;歌单编号&quot; data-server&#x3D;&quot;音乐软件（腾讯输入tencent，网易输入netease）&quot; data-type&#x3D;&quot;playlist&quot; data-fixed&#x3D;&quot;true&quot; data-listfolded&#x3D;&quot;true&quot; data-order&#x3D;&quot;random&quot; data-theme&#x3D;&quot;#F58EA8&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line"> &lt;script src&#x3D;&quot;https:&#x2F;&#x2F;unpkg.com&#x2F;meting@1.2&#x2F;dist&#x2F;Meting.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line"> &lt;!-- 音乐播放器 end --&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- 音乐播放器 --&gt;</span><br><span class="line"> &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;aplayer@1.10.0&#x2F;dist&#x2F;APlayer.min.css&quot;&gt;</span><br><span class="line"> &lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;aplayer@1.10.0&#x2F;dist&#x2F;APlayer.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line"> &lt;div id&#x3D;&quot;aplayer&quot; class&#x3D;&quot;aplayer&quot; data-id&#x3D;&quot;&quot; data-server&#x3D;&quot;&quot; data-type&#x3D;&quot;playlist&quot; data-fixed&#x3D;&quot;true&quot; data-listfolded&#x3D;&quot;true&quot; data-order&#x3D;&quot;random&quot; data-theme&#x3D;&quot;#F58EA8&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line"> &lt;script src&#x3D;&quot;https:&#x2F;&#x2F;unpkg.com&#x2F;meting@1.2&#x2F;dist&#x2F;Meting.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line"> &lt;!-- 音乐播放器 end --&gt;</span><br></pre></td></tr></table></figure>
+<p>data-id输入歌单编号，data-server输入音乐软件（腾讯输入tencent，网易输入netease）</p>
 <p>打开歌单网址，看地址框的数字编号，就是歌单编号了</p>
 <p><img src="https://minyuchengmin.github.io/therspist/playlist.jpg" alt=""></p>
 <h4 id="看板娘"><a href="#看板娘" class="headerlink" title="看板娘"></a>看板娘</h4><p>作为自己辛辛苦苦配置的博客，不配置最好的看板娘是不是说不过去啊</p>
@@ -123,7 +124,7 @@
 <p>所以我就挂一个<a href="https://blog.csdn.net/qq_39610915/article/details/90679768" target="_blank" rel="noopener">链接</a>吧，里面介绍的还是比较详细的</p>
 <p>我的next主题配置就到这里了有什么问题就字评论区里讨论吧</p>
 <hr>
-<p>参考资料： <a href="https://dgsyrc.github.io/2019/02/01/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%B4%E6%98%8E%E4%B9%A6%EF%BC%88%E6%8C%87%E5%8C%97%E4%B9%A6%EF%BC%89/" target="_blank" rel="noopener">1</a><br><a href="https://www.cnblogs.com/php-linux/p/8416122.html" target="_blank" rel="noopener">2</a></p>
+<p>参考资料： <a href="https://dgsyrc.github.io/2019/02/01/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%B4%E6%98%8E%E4%B9%A6%EF%BC%88%E6%8C%87%E5%8C%97%E4%B9%A6%EF%BC%89/" target="_blank" rel="noopener">1</a>  <a href="https://www.cnblogs.com/php-linux/p/8416122.html" target="_blank" rel="noopener">2</a></p>
 ]]></content>
       <tags>
         <tag>教程</tag>
