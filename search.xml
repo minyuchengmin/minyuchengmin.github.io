@@ -88,7 +88,8 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  unescape: false</span><br></pre></td></tr></table></figure>
 <h4 id="书签"><a href="#书签" class="headerlink" title="书签"></a>书签</h4><p>书签会记住你上次阅读文章停留的位置</p>
 <p>我们在cmd中输入git clone <a href="https://github.com/theme-next/theme-next-bookmark.git" target="_blank" rel="noopener">https://github.com/theme-next/theme-next-bookmark.git</a> source/lib/bookmark</p>
-<p>然后再主题目录下修改以下配置<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bookmark:</span><br><span class="line">  enable: true</span><br><span class="line">  save: auto</span><br></pre></td></tr></table></figure><br>经过主题更新之后，书签的位置胸左上角移到了右上角，如果觉得和后面添加的进度条冲突的话可以在css中删除bookmark图标（具体位置我也不记得了，反正是偶然找到的）</p>
+<p>然后再主题目录下修改以下配置<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bookmark:</span><br><span class="line">  enable: true</span><br><span class="line">  save: auto</span><br></pre></td></tr></table></figure><br>经过主题更新之后，书签的位置胸左上角移到了右上角，如果觉得和后面添加的进度条冲突的话可以在css中删除bookmark图标</p>
+<p>打开\themes\next\layout_partials\widgets.swig，在<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;%- if theme.bookmark.enable %&#125;</span><br><span class="line">  ~~~</span><br><span class="line">&#123;%- endif %&#125;</span><br></pre></td></tr></table></figure><br>的部分中间的代码（就是~~~的部分）删除就可以</p>
 <h4 id="标签等栏目"><a href="#标签等栏目" class="headerlink" title="标签等栏目"></a>标签等栏目</h4><p>如果有些人在到这之前在博客的目录栏中打开了标签等栏目的话会发现这种情况：</p>
 <p><img src="https://minyuchengmin.github.io/therspist/404.jpg" alt=""></p>
 <p>原因是因为我们并没有添加相对应的地址。</p>
